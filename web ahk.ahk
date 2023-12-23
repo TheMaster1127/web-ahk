@@ -37,8 +37,8 @@ CoordMode, Mouse, Screen  ; Set coordinates to be relative to the screen
 
 FileReadLine, imageTag1, imageTag.txt, 1
 FileReadLine, imageTag2, imageTag.txt, 2
-
-global imageTag1, imageTag2, Base64ImageData
+ahkSpeed := 10
+global imageTag1, imageTag2, Base64ImageData, ahkSpeed
 
 paths := {}
 paths["/"] := Func("HelloWorld")
@@ -60,6 +60,7 @@ paths["/moveup"] := Func("moveup")
 paths["/movedown"] := Func("movedown")
 paths["/moveleft"] := Func("moveleft")
 paths["/moveright"] := Func("moveright")
+paths["/mousespeed"] := Func("mousespeed")
 
 
 
@@ -198,25 +199,25 @@ releaser(ByRef req, ByRef res, ByRef server) {
 
 ; Function for /moveup endpoint
 moveup(ByRef req, ByRef res, ByRef server) {
-    MouseMoveDirection(0, -10)
+    MouseMoveDirection(0, "-" . ahkSpeed)
     res.status := 200
 }
 
 ; Function for /movedown endpoint
 movedown(ByRef req, ByRef res, ByRef server) {
-    MouseMoveDirection(0, 10)
+    MouseMoveDirection(0, ahkSpeed)
     res.status := 200
 }
 
 ; Function for /moveleft endpoint
 moveleft(ByRef req, ByRef res, ByRef server) {
-    MouseMoveDirection(-10, 0)
+    MouseMoveDirection("-" . ahkSpeed, 0)
     res.status := 200
 }
 
 ; Function for /moveright endpoint
 moveright(ByRef req, ByRef res, ByRef server) {
-    MouseMoveDirection(10, 0)
+    MouseMoveDirection(ahkSpeed, 0)
     res.status := 200
 }
 
@@ -232,6 +233,43 @@ MouseMoveDirection(dx, dy) {
     ; Move the mouse to the new position
     MouseMove, % newX, % newY
 }
+
+
+
+
+
+; Function for /mousespeed endpoint
+mousespeed(ByRef req, ByRef res, ByRef server) {
+    ; Get mousespeed input from the request
+
+    if (req.method = "POST") {
+        ; Check if the request has a body
+        if (req.body != "") {
+            ; Read the AHK code from the request body
+            ahkSpeed := req.body
+
+
+; Use a regular expression to extract digits
+ahkSpeed := RegExReplace(ahkSpeed, "\D", "")
+
+    res.status := 200
+        } else {
+            res.SetBodyText("No AHK code provided in the request body")
+            res.status := 400 ; Bad Request
+        }
+    } else {
+        res.SetBodyText("Invalid request method. Use POST.")
+        res.status := 405 ; Method Not Allowed
+    }
+    ; Do something with X and Y, e.g., move the mouse
+
+
+
+    res.status := 200
+} ; end of func
+
+
+
 
 
 ; Function for /custom endpoint
