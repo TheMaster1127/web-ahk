@@ -1,0 +1,1744 @@
+======================================================
+=======[Log from Date-21-12-2023 Time-22-56-06]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-58-53]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-59-01]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-59-06]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-59-16]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-59-37]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-22-59-42]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+======================================================
+=======[Log from Date-21-12-2023 Time-23-00-11]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+gg
+======================================================
+=======[Log from Date-21-12-2023 Time-23-01-06]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-01-45]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-02-03]=======
+======================================================
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-03-00]=======
+======================================================
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-12-05]=======
+======================================================
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-15-23]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 10
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-15-37]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 10
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-19-37]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-46-21]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-46-40]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-21-12-2023 Time-23-46-49]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-37-39]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 7
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-38-44]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-42-34]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-42-46]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-43-01]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-43-10]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-43-21]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-43-33]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-43-43]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-01-45-18]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-13-11-13]=======
+======================================================
+
+
+
+
+
+word1 := "hello "
+word2 := "watching "
+word3 := "never "
+word4 := "but "
+word5 := "house "
+word6 := "are "
+word7 := "table "
+word8 := "fridge "
+word9 := "what "
+word10 := "hidden "
+
+
+loop, 70
+{
+out := ""
+loopCount := 0
+loop
+{
+loopCount++
+random, ran, 1, 10
+if (InStr(out, word%ran%))
+{
+loopCount--
+Continue 
+}
+out .= word%ran%
+if (loopCount = 5)
+{
+out .= "`n"
+}
+if (loopCount = 10)
+{
+break
+}
+}
+
+stringtrimright, out, out, 1
+FileAppend, %out%`n`n, file.txt
+
+}
+stringtrimright, out, out, 2
+
+======================================================
+=======[Log from Date-22-12-2023 Time-13-12-42]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-12-53]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-13-05]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-45-33]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-46-26]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-51-26]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-13-52-41]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-16-41-05]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-16-43-49]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-15-34]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-16-51]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-17-34]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-19-46]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-20-03]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-21-49]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-30-43]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-42-42]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-50-21]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-54-07]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-54-27]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-17-56-35]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-18-03-57]=======
+======================================================
+
+FileAppend, hello world, file.txt
+
+
+hhhh
+======================================================
+=======[Log from Date-22-12-2023 Time-18-04-06]=======
+======================================================
+
+FileAppend, hello world, file.txt
+
+
+hhhh
+======================================================
+=======[Log from Date-22-12-2023 Time-18-04-17]=======
+======================================================
+
+FileAppend, hello world, file.txt
+
+
+
+======================================================
+=======[Log from Date-22-12-2023 Time-18-07-56]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-18-09-03]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-18-10-17]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-18-50-11]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-18-50-12]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-19-00-31]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-19-00-46]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-22-12-2023 Time-19-22-16]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-13-11-44]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-13-12-15]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-13-13-37]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-18-15-58]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-18-16-19]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-18-16-32]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-18-18-03]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-18-44-28]=======
+======================================================
+
+FileAppend, hello world, file.txt
+fff
+======================================================
+=======[Log from Date-23-12-2023 Time-18-44-37]=======
+======================================================
+
+FileAppend, hello world, file.txt
+
+======================================================
+=======[Log from Date-23-12-2023 Time-19-12-56]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-24-31]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-29-11]=======
+======================================================
+
+FileAppend, hello world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-29-21]=======
+======================================================
+
+FileAppend, helo world, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-30-18]=======
+======================================================
+
+FileAppend, %A_Hour%:%%A_Min:%A_Sec%, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-30-37]=======
+======================================================
+
+FileAppend, %A_Hour%:%A_Min:%A_Sec%, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-30-56]=======
+======================================================
+
+FileAppend, %A_Hour%:%A_Min%:%A_Sec%, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-31-05]=======
+======================================================
+
+FileAppend, %A_Hour%:%A_Min%:%A_Sec%, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-33-48]=======
+======================================================
+
+FileAppend, %A_Hour%:%A_Min%:%A_Sec%, file.txt
+======================================================
+=======[Log from Date-23-12-2023 Time-19-33-57]=======
+======================================================
+
+FileAppend, %A_Hour%:%A_Min%:%A_Sec%, file.txt

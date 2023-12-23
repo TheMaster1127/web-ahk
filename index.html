@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Web AutoHotKey</title>
+		<style>
+			#editor {
+				width: 80dvw;
+				height: 60dvh;
+				margin: 1rem auto;
+				padding: 0.5rem;
+				font-size: 1em;
+				border-radius: 0.3rem;
+			}
+
+			body {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				background-color: #1a1818;
+				color: #ffffff;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.controls {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 1rem;
+				margin: 1rem;
+				padding: 1rem;
+			}
+
+			button,
+			.delay-wrapper {
+				margin: 0.5rem;
+				padding: 0.7rem;
+
+				font-size: 1.2em;
+				cursor: pointer;
+				margin: 0.5rem;
+				background-color: #2ecc71;
+				color: #ffffff;
+				border: none;
+				border-radius: 0.2rem;
+				transition: background-color 0.3s;
+				align-self: center;
+				text-wrap: nowrap;
+				min-width: 8rem;
+			}
+
+			button:hover {
+				background-color: #27ae60;
+			}
+
+			#result {
+				margin-top: 1rem;
+				font-size: 1.2em;
+				color: #999c9a;
+				font-weight: bold;
+			}
+			.pop-up {
+				background-color: #1a1818;
+				text-align: center;
+			}
+			.pop-up .content {
+				display: flex;
+				height: 90dvh;
+				width: 80dvw;
+				flex-direction: column;
+				justify-content: space-between;
+				margin: 0;
+				padding: 0;
+			}
+
+				.delay {
+				background-color: transparent;
+				align-self: center;
+				border: none;
+				color: #ffffff; /* Set the text color to white */
+				font-size: 1.5rem;
+				padding: 0;
+				text-align: center;
+				width: 3.5rem;
+				height: 1.5rem;
+			}
+
+			.delay:focus,
+			.delay:active {
+				outline: none !important;
+			}
+
+			.delay-wrapper i {
+				align-self: center;
+			}
+			.delay-wrapper {
+				display: flex;
+				padding-left: 0.5rem;
+				background-color: #27ae60;
+				justify-content: space-evenly;
+			}
+
+			.show-bt {
+				height: 2.7rem;
+				padding: 0;
+				margin: 0;
+			}
+
+			img {
+				height: 75dvh !important;
+			}
+			.ace_print-margin {
+				visibility: hidden !important;
+			}
+
+			.ace-monokai .ace_marker-layer .ace_active-line {
+				background-color: #103010 !important;
+			}
+
+			.ace-monokai {
+				background-color: #121212 !important;
+				color: #f8f8f2;
+			}
+
+			.ace-monokai .ace_gutter {
+				background: #204020 !important;
+				color: #cbcdc3 !important;
+			}
+
+			.ace-monokai .ace_gutter-active-line {
+				background-color: transparent !important;
+			}
+
+			.ace-monokai .ace_entity.ace_name.ace_tag,
+			.ace-monokai .ace_keyword,
+			.ace-monokai .ace_meta.ace_tag,
+			.ace-monokai .ace_storage {
+				color: #40a0e0 !important;
+			}
+
+			.ace-monokai .ace_entity.ace_name.ace_function,
+			.ace-monokai .ace_entity.ace_other,
+			.ace-monokai .ace_entity.ace_other.ace_attribute-name,
+			.ace-monokai .ace_variable {
+				color: #ff80df !important;
+			}
+
+			.ace-monokai .ace_comment {
+				color: #40d080 !important;
+			}
+
+			.ace-monokai .ace_string {
+				color: #ffa0a0 !important;
+			}
+
+			.ace-monokai .ace_punctuation,
+			.ace-monokai .ace_punctuation.ace
+
+_tag {
+				color: #ffa0a0 !important;
+			}
+
+			*::-webkit-scrollbar {
+				width: 1em;
+			}
+
+			*::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			}
+
+			*::-webkit-scrollbar-thumb {
+				background-color: darkgrey;
+				outline: 1px solid slategrey;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <textarea id="ahkCode" placeholder="Write your AHK code here..."></textarea> -->
+		<div id="editor">FileAppend, hello world, file.txt</div>
+
+		<div class="controls">
+			<button onclick="saveToFileAndSend('/button')"><i class="fa-solid fa-floppy-disk"></i> Send</button>
+			<button onclick="sendScreenshot('/button2')"><i class="fa-solid fa-download"></i> Screenshot</button>
+			
+			<!-- New input boxes for X and Y coordinates -->
+			<input id="xCoordinate" class="delay" placeholder="X" type="number" />
+			<input id="yCoordinate" class="delay" placeholder="Y" type="number" />
+			<button onclick="sendMousePos('/mousepos')"><i class="fa-solid fa-mouse"></i> Send Pos</button>
+			
+			
+			<button onclick="sendRequest('/moveup', 1)"><i class="fa-solid fa-long-arrow-up"></i> Move Up</button>
+			<button onclick="sendRequest('/movedown', 1)"><i class="fa-solid fa-long-arrow-down"></i> Move Down</button>
+			<button onclick="sendRequest('/moveleft', 1)"><i class="fa-solid fa-long-arrow-left"></i> Move Left</button>
+			<button onclick="sendRequest('/moveright', 1)"><i class="fa-solid fa-long-arrow-right"></i> Move Right</button>
+
+			<!-- Additional buttons for various actions -->
+			<button onclick="sendRequest('/copy', 1)"><i class="fa-solid fa-copy"></i> Copy</button>
+			<button onclick="sendRequest('/paste', 1)"><i class="fa-solid fa-paste"></i> Paste</button>
+			<button onclick="sendRequest('/clickl', 1)"><i class="fa-solid fa-mouse-left"></i> ClickL</button>
+			<button onclick="sendRequest('/clickr', 1)"><i class="fa-solid fa-mouse-right"></i> ClickR</button>
+			<button onclick="sendRequest('/holdl', 1)"><i class="fa-solid fa-mouse-left"></i> HoldL</button>
+			<button onclick="sendRequest('/holdr', 1)"><i class="fa-solid fa-mouse-right"></i> HoldR</button>
+			<button onclick="sendRequest('/releasel', 1)"><i class="fa-solid fa-mouse-left"></i> ReleaseL</button>
+			<button onclick="sendRequest('/releaser', 1)"><i class="fa-solid fa-mouse-right"></i> ReleaseR</button>
+
+
+
+
+
+
+
+			<!-- Edit box for custom input and button to send it -->
+			<input id="customInput" class="delay" placeholder="Custom Input" />
+			<button onclick="sendCustom('/custom')"><i class="fa-solid fa-paper-plane"></i> Send Custom</button>
+			
+			<div class="delay-wrapper">
+				<i class="fa-regular fa-clock"></i>
+				<input class="delay" id="delay" value="2" type="number" />
+			</div>
+			<button class="show-bt" onclick="showOutput()"><i class="fa-solid fa-eye"></i></button>
+		</div>
+
+		<dialog class="pop-up">
+			<div class="content">
+				<div id="result">
+					<p><img src="https://picsum.photos/1920/1080" alt="" /></p>
+				</div>
+				<button onclick="hideOutput()">Close</button>
+			</div>
+		</dialog>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.2/ace.js"
+			integrity="sha512-JLIRlxWh96sND3uUgI2RVHZJpgkWHg3+xoUY8XkgTPKpqRaqdk7zD/ck/XHXFSMW84o6GrP67dlqN3b98NB/yA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+
+			<script>
+
+ 
+
+
+				function saveToFileAndSend(endpoint) {
+					sendRequest(endpoint);
+					setTimeout(() => {
+						loadFromFileAndSend("/button2");
+					}, document.querySelector("#delay").value * 1000);
+				}
+			
+				function loadFromFileAndSend(endpoint) {
+					loadFromFile();
+					out = sendRequest(endpoint);
+				}
+			
+				function loadFromFile() {
+					// Add your logic for loading from file if needed
+				}
+			
+				function sendScreenshot(endpoint) {
+					sendRequest(endpoint);
+				}
+			
+				function showOutput() {
+					document.querySelector(".pop-up").showModal();
+				}
+			
+				function hideOutput() {
+					document.querySelector(".pop-up").close();
+				}
+			
+				function sendMousePos(endpoint2) {
+					let x = document.getElementById("xCoordinate").value;
+					let y = document.getElementById("yCoordinate").value;
+
+					if (x == "") {
+						x = 0;
+					}
+
+					if (y == "") {
+						y = 0;
+					}
+
+					sendRequest2(endpoint2, { x, y });
+				}
+
+
+				function sendCustom(endpoint3) {
+					const custom = document.getElementById("customInput").value;
+					sendRequest3(endpoint3, {custom});
+				}
+			
+				function sendRequest(endpoint, ShowResults, data = {}) {
+					const ahkCode = editor.getValue();
+			
+					fetch(endpoint, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ ahkCode, ...data }),
+					}) 
+					.then((response) => response.text())
+					.then((data) => {
+						if (ShowResults != 1)
+						{
+						displayResult(data);
+						}
+					})
+					.catch((error) => {
+						console.error("Error:", error);
+						displayResult("An error occurred. Check the console for details.");
+					});
+				}
+			
+				function sendRequest2(endpoint2, data = {}) {
+					const ahkPos = ""; // You may want to get the actual value from somewhere
+					
+					fetch(endpoint2, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ ahkPos, ...data }),
+					})
+					.then((response) => response.text())
+					.then((data) => {
+						// Process the response if needed
+						console.log(data);
+					})
+					.catch((error) => {
+						console.error("Error:", error);
+						displayResult("An error occurred. Check the console for details.");
+					});
+				}
+
+
+
+				function sendRequest3(endpoint3, data = {}) {
+					const ahkCustom = ""; // You may want to get the actual value from somewhere
+
+					fetch(endpoint3, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ ahkCustom, ...data }),
+					})
+					.then((response) => response.text())
+					.then((data) => {
+						// Process the response if needed
+						console.log(data);
+					})
+					.catch((error) => {
+						console.error("Error:", error);
+						displayResult("An error occurred. Check the console for details.");
+					});
+				}
+
+			
+				function displayResult(content) {
+					document.getElementById("result").innerHTML = `<p>${content}</p>`;
+					showOutput();
+				}
+
+
+
+			
+				var editor = ace.edit("editor");
+				editor.setTheme("ace/theme/monokai");
+				editor.session.setMode("ace/mode/autohotkey");
+			</script>
+			<script src="https://kit.fontawesome.com/2e34a63ef0.js" crossorigin="anonymous"></script>
+			</body>
+			</html>
